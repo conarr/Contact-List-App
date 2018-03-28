@@ -11,7 +11,31 @@
 
 <body>
 	<div class="container">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>name</th>
+					<th>e-mail</th>
+					<th>phone</th>
+					<th> </th>
+				</tr>
+				<tr>
+					<td><input class="form name-input"></td>
+					<td><input class="form email-input"></td>
+					<td><input class="form phone-input"></td>
+					<td><button class="btn add-contact">add</button></td>
+				</tr>
+			</thead>
+			<tbody class="contacts-list"></tbody>
+		</table>
 	</div>
+
+	<script type="text/template" class="contacts-list-template">
+	<td><span class="name"><%= name %></span></td>
+	<td><span class="email"><%= email %></span></td>
+	<td><span class="phone"><%= phone %></span></td>
+	<td><button class="btn edit-contact">edit</button> <button class="btn delete-contact">delete</button><button class="btn update-contact" style="display:none">update</button> <button class="btn cancel" style="display:none">cancel</button></td>
+	</script>
 	
 	<script src="js/libraries/jquery.js"></script>
 	<script src="js/libraries/underscore.js"></script>
@@ -23,5 +47,4 @@
     <script type="text/javascript" src="js/contactItemsView.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
-
 </html>
