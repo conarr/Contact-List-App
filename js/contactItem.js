@@ -4,4 +4,8 @@ var ContactItem = Backbone.Model.extend({
 		email: '',
 		phone: ''
 	},
+
+/*  CALLS THE SOURCE API FOR USER ITEMS  */
+	urlRoot: "https://jsonplaceholder.typicode.com/users"
+
 });
