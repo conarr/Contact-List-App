@@ -1,0 +1,130 @@
+body
+	{
+	background: #787878;
+	font-family: 'Nanum Pen Script', cursive;
+	vertical-align: middle;
+	}
+
+#container
+	{
+	width: 1000px;
+	margin: 0 auto  0 auto;
+	}
+
+#containerTop
+	{
+	height: 30px;
+	}
+
+#containerList
+	{
+	padding-left: 90px;
+	padding-right: 20px;
+	}
+
+#containerList
+	{
+	list-style: none;
+	border: 0;
+	}
+
+th
+	{
+	font-size: 36px;
+	font-family: 'Nanum Pen Script', cursive;
+	color: #941d77;
+	line-height: 30px;
+	text-align: left;
+	}
+
+td
+	{
+	font-size: 22px;
+	font-family: 'Nanum Pen Script', cursive;
+	color: #004280;
+	line-height: 70px;
+	}
+
+input.form
+	{
+	border-top: 1px solid #941d77;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid #941d77;
+	font-size: 22px;
+	color: #0080b2;
+	font-family: 'Nanum Pen Script', cursive;
+	background: none;
+	}
+
+button
+	{
+	float: right;
+	width: 60px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 13px;
+	line-height: 16px;
+	border: 0;
+	color: #f0f0f0;
+	margin-left: 5px;
+	}
+
+button.add-contact
+	{
+	background-color: #4b0049;
+	}
+
+button.add-contact:hover
+	{
+	background: #941d77;
+	}
+
+button.delete-contact
+	{
+	background-color: #0080b2;
+	}
+
+button.delete-contact:hover
+	{
+	background: #004280;
+	}
+
+button.edit-contact
+	{
+	background-color: #004280;
+	}
+
+button.edit-contact:hover
+	{
+	background: #0080b2;
+	}
+
+button.update-contact
+	{
+	background-color: #4b0049;
+	}
+
+button.update-contact:hover
+	{
+	background: #941d77;
+	}
+
+button.cancel
+	{
+	background-color: #941d77;
+	}
+
+button.cancel:hover
+	{
+	background: #4b0049;
+	}
+
+.footerText
+	{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	margin-bottom: 5px;
+	}
