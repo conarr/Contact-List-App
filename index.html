@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Conor's Contact List App</title>
+    <meta name="description" content="Conor's Contact List App">
+    <meta name="author" content="Conor Arrigan | HND Interactive Media Y2/T2">
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/contactlistappstyles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic' rel='stylesheet' type='text/css'>
+    <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+</head>
+
+<body>
+	<div id="container">
+		<div id="containerTop">
+			<img src="images/NotepadTop.jpg" alt="Notepad Top"/>
+        </div>
+
+		<div id="containerList">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>name</th>
+						<th>e-mail</th>
+						<th>phone</th>
+						<th> </th>
+					</tr>
+					<tr>
+						<td><input placeholder="contact name" class="form name-input"></td>
+						<td><input placeholder="contact e-mail" class="form email-input"></td>
+						<td><input placeholder="contact phone" class="form phone-input"></td>
+						<td><button class="btn add-contact">add</button></td>
+					</tr>
+				</thead>
+				<tbody class="contacts-list"></tbody>
+			</table>
+		</div>
+
+		<div id="containerBottom">
+			<img src="images/NotepadBottom.jpg" alt="Notepad Bottom"/>
+        </div>
+        <p class="footerText">Unit 76-78 CRUD Application Development with JavaScript Frameworks - Conor Arrigan | HND Interactive Media Y2/T2</p>
+	</div>
+
+
+	<script type="text/template" class="contacts-list-template">
+	<td><span class="name"><%= name %></span></td>
+	<td><span class="email"><%= email %></span></td>
+	<td><span class="phone"><%= phone %></span></td>
+	<td><button class="btn edit-contact">edit</button> <button class="btn delete-contact">delete</button><button class="btn update-contact" style="display:none">update</button> <button class="btn cancel" style="display:none">cancel</button></td>
+	</script>
+	
+	<script src="js/libraries/jquery.js"></script>
+	<script src="js/libraries/underscore.js"></script>
+	<script src="js/libraries/backbone.js"></script>
+
+	<script type="text/javascript" src="js/contactItem.js"></script>
+    <script type="text/javascript" src="js/contactItems.js"></script>
+    <script type="text/javascript" src="js/contactItemView.js"></script>
+    <script type="text/javascript" src="js/contactItemsView.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
