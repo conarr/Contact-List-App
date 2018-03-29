@@ -13,11 +13,13 @@ body
 
 #containerTop
 	{
-	height: 30px;
+	height: 318px;
 	}
 
 #containerList
 	{
+ 	background-image: url(../images/NotepadSection.jpg);
+	background-repeat: repeat-y;
 	padding-left: 90px;
 	padding-right: 20px;
 	}
