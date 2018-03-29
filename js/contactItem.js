@@ -4,5 +4,4 @@ var ContactItem = Backbone.Model.extend({
 		email: '',
 		phone: ''
 	},
-
 });
